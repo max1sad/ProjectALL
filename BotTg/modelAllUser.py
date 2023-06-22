@@ -1,0 +1,25 @@
+class field():
+    def id_user(self):
+        return "id_user"
+    def time_start(self):
+        return "time_start"
+    def id_registration(self):
+        return "id_registration"
+    def name_famyli(self):
+        return "name_famyli"
+    def mail(self):
+        return "mail"
+    def id_product(self):
+        return "id_product"
+    def product_name(self):
+        return "product_name"
+    def message_time(self):
+        return "message_time"
+    def message_product(self):
+        return "message_product"
+    def id_support(self):
+        return "id_support"
+    def message_support(self):
+        return "message_support"
+    def id_zayvaka(self):
+        return "id_zayvaka"

@@ -1,0 +1,223 @@
+/*Свойства для управления политиками*/
+#p-m {
+    display:none;
+    
+}
+
+.managements {
+   /* width: 60%;*/
+    height:85%;
+   width:1050px;
+    /*height:515px;*/
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    box-shadow:0px 3px 15px 6px #443c3c;
+    background-color: #f7f9fafd;
+    opacity:1;
+    z-index:201;
+    
+}
+.window-grid {
+    /*общие настройки сетки*/
+    width:1050px;
+    
+        height: 100%;
+        min-height:515px;
+        /*min-width:800px;*/
+        /*рисуем зелёные рамки*/
+        
+        /*подключаем сетку*/
+        display: grid;
+        margin-left: auto;
+        /*формируем  одинаковых строки и столбца*/
+        grid-template-columns: repeat(9, 10%);
+        grid-template-rows: repeat(21, 5%);
+        } 
+
+        /*внешний вид ячеек*/
+.window-grid > * {
+        /*фоновый цвет*/
+        background-color: #ffbf94;
+        /*скругление углов*/
+        border-radius: 5px;
+        /*расстояние от одной границы ячейки до другой*/
+        margin: 1px;
+        }
+.obl-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.obl-2 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-column-end: 12;
+}
+.obl-3 {
+    overflow-y: auto;
+    overflow-x: auto;
+    grid-row-start: 2;
+    grid-row-end: 21;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.obl-4 {
+
+    overflow-y: auto;
+    overflow-x: auto;
+    grid-row-start: 2;
+    grid-row-end: 21;
+    grid-column-start: 5;
+    grid-column-end: 12;
+  /*  background-color: #CEA262;*/
+    
+}
+
+/*Завершение окна политиками*/
+/*Модальное окно пустое, с кнопкой выхода. Для отчетов в виде запущенных процессов, список пользователей...*/
+.modal-view {
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 80%;
+    height:90%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    display:none;
+    box-shadow:0px 3px 15px 6px #443c3c;
+    background-color: #f7f9fafd;
+    opacity:1;
+    z-index:202;
+    
+}
+
+.grid-modal {
+
+    /*общие настройки сетки*/
+        height: 100%;
+        min-width:800px;
+        /*рисуем зелёные рамки*/
+        /*подключаем сетку*/
+        display: grid;
+        margin-left: auto;
+        /*формируем  одинаковых строки и столбца*/
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(15, 6%);
+        } 
+
+        /*внешний вид ячеек*/
+.grid-modal > * {
+        /*фоновый цвет*/
+        background-color: #ffbf94;
+        /*скругление углов*/
+        border-radius: 5px;
+        /*расстояние от одной границы ячейки до другой*/
+        margin: 1px;
+        }
+.g-m-o-2 {
+
+    grid-row-start: 2;
+    grid-row-end: 21;
+    grid-column-start: 1;
+    
+    
+}
+/*Закрытие пустого модального окна*/
+
+/* для модального окна, гарантированное удаление объектов*/
+
+.del-obj-grid {
+    /*общие настройки сетки*/
+        height: 100%;
+        min-width:800px;
+        /*рисуем зелёные рамки*/
+        
+        /*подключаем сетку*/
+        display: grid;
+        margin-left: auto;
+        /*формируем  одинаковых строки и столбца*/
+        grid-template-columns: repeat(21, 5%);
+        grid-template-rows: repeat(21, 5%);
+    
+}
+/*внешний вид ячеек*/
+.del-obj-grid > * {
+        /*фоновый цвет*/
+        background-color: orange;
+        /*скругление углов*/
+        border-radius: 5px;
+        /*расстояние от одной границы ячейки до другой*/
+        margin: 1px;
+}
+
+.del-m-1 {
+   overflow-y: auto;
+    overflow-x: auto;
+    grid-column-start: 1;
+    
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 19;
+}
+.del-m-2 {
+    background-color:red;
+    grid-column-start: 10;     
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 19;
+}
+.del-m-3 {
+     background-color:white;
+   overflow-y: auto;
+    overflow-x: auto;
+    grid-column-start: 11;     
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 19;
+}
+.del-m-4 {
+   grid-row-start: 19;
+    grid-row-end: 21;
+    grid-column-start: 1;     
+    grid-column-end: 21;
+}
+
+/*Дополнительно меню которое на правую кнопку появляется*/
+.dop-menu {
+    position: absolute;
+    display:none;
+    box-shadow:0px 3px 15px 6px #443c3c;
+    background-color: #f7f9fafd;
+    opacity:1;
+    z-index:200; 
+    
+}
+.dev-atr td:hover {
+   background: orange;
+    
+}
+
+
+.active-href :active {
+    color:red;
+}
+.new-cursor {
+    cursor:pointer;
+}
+
+/*Таблица с кнопками выбора элементов из файловой системы*/
+.g-r-i tr:hover {
+   background: orange; 
+}
+#obj-remove tr:hover {
+
+     background: orange; 
+}
+.inline-color {
+    background-color: red;
+}
+/*---*/
+
+
+

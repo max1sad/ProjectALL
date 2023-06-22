@@ -1,0 +1,176 @@
+<html>
+
+<head>
+
+
+		<meta charset="UTF-8">
+		<title>АРМ АБИ</title>
+		
+		
+		<link rel="stylesheet" href="front/css_test.css" />
+	<link rel="stylesheet" href="front/menu_schapka.css" />
+	
+  <style>
+
+    body{
+	min-width:1000px;
+	min-height:800px;
+      /*настраиваем шрифт*/
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*общие настройки сетки*/
+    .grid {
+	  height: 100%;
+	  min-width:920px;
+      /*рисуем зелёные рамки*/
+     
+      /*подключаем сетку*/
+      display: grid;
+	   margin-left: auto;
+      /*формируем по 4 одинаковых строки и столбца*/
+      grid-template-columns: repeat(9, 10%);
+      grid-template-rows: repeat(12, 70px);
+    } 
+
+    /*внешний вид ячеек*/
+    .grid > * {
+      /*фоновый цвет*/
+      background-color: #ffbf94;
+      /*скругление углов*/
+      border-radius: 5px;
+      /*расстояние от одной границы ячейки до другой*/
+      margin: 1px;
+    }
+
+	.oblast-3 {
+	  grid-row-start: 13;
+      grid-row-end: 14;
+      grid-column-start: 2;
+	  grid-column-end: 11;
+		
+	}
+	
+	.oblast-1 {
+	  overflow-y: auto;
+      grid-row-start: 2;
+      grid-row-end: 13;
+      grid-column-start: 2;
+      grid-column-end: 10;
+    }
+	.oblast-2 {
+	  grid-row-start: 2;
+      grid-row-end: 13;
+      grid-column-start: 10;
+	grid-column-end: 11;
+
+	}
+	.oblast-0 {
+	  grid-row-start: 1;
+      grid-column-start: 2;
+		grid-column-end: 11;
+	}
+	.oblast-4 {
+	  grid-row-start: 1;
+	  grid-row-end: 14;
+      
+	}
+  </style>
+</head>
+
+<body>
+
+  <!-- создаём контейнер, который будет отвечать за нашу сетку -->
+  <div class="grid">
+    <!-- и создаём 16 вложенных элементов -->
+	<div class="oblast-0">
+				<div class="navbar">
+					<div class="dropdown">
+						<button class="dropbtn">Файл
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="#">Резервная копия БД</a>
+							<a href="#">Восстановление БД</a>
+							<a href="#">Правила РД</a>
+							<a href="#">Отчуждаемые МНИ</a>
+							<a href="#">Планировщик задач</a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">Настройки
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="#">Параметры</a>
+						</div>
+					</div>
+					<a href="#">Справка</a>
+				</div>
+
+
+	</div>
+    <div class="oblast-1">Основное окно</div>
+    <div class="oblast-2">Списко доменов</div>
+    <div class="oblast-3">Доп кнопки - подвал
+	Доп кнопки - подвал</br>
+	Доп кнопки - подвал</br>
+	</div>
+	<div class="oblast-4">
+			<div class="side-menu">
+				<div class="side-menu-buttons"> 
+					<a href="#link" class="side-menu-item">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_dev.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Устройства</div>
+					</a> 
+					<a href="#link" class="side-menu-item">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_users.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Пользователи</div>
+					</a> 
+					<a href="#link" class="side-menu-item svg-icon-anim">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_tests.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Тестирвоание СЗИ</div>
+					</a> 
+					<a href="#link" class="side-menu-item">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_ic.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Контроль целостности</div>
+					</a> 
+					<a href="#link" class="side-menu-item">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_av2.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Антивирусная проверка</div>
+					</a> 
+					<a href="#link" class="side-menu-item" onclick="openCity(event, 'test')">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_nsd.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">События ИБ</div>
+					</a> 
+					<a href="#link" class="side-menu-item">
+						<div class="side-menu-item-icon">
+							<img src="front/images/Icons/_nsd_ext.png" width="48" height="48"></img>
+						</div>
+						<div class="side-menu-hover">Внешние события ИБ</div>
+					</a> 
+				</div>
+				
+			</div>
+	
+	
+	
+	</div>
+
+    
+  </div>
+</body>
+</html>

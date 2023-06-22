@@ -1,0 +1,48 @@
+{
+         "core": {
+                
+                "data" : [
+                {
+                    "text" : "Корень",
+                    "state" : { "opened" : true },
+                    "children" : [
+                        {
+                            "text" : "Файл1111",
+                            "state" : { "selected" : false },
+                            "icon" : "jstree-file"
+                        },
+                        { "text" : "Файл2", "state" : { "disabled" : true } },
+                        {
+                            "text" : "GGwp",
+                            "state" : { "opened" : true },
+                                "children": [
+                                {
+                                    "text" : "Файл1", "state" : { "selected" : false },
+                                    "icon" : "jstree-file"
+                                },
+                                { "text" : "File1111", "state" : { "disabled" : true } }
+                                ,
+                                { "text" : "File1", "state" : { "disabled" : true } },
+                                {
+                                    "text" : "GGwpkatal",
+                                    "state" : { "opened" : false },
+                                    "children" : [
+                        {
+                            "text" : "Файл13",
+                            "state" : { "selected" : false },
+                            "icon" : "jstree-file"
+                        },
+			{
+                            "text" : "Файл3344324",
+                            "state" : { "selected" : false },
+                            "icon" : "library_css/tree_css/test_icons.png"
+                        }
+			]
+                                }
+                                ]
+                        }
+                    ]
+                }
+                ]
+            }
+        }

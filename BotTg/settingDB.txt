@@ -1,0 +1,48 @@
+БД для самого бота
+create database tgbot owner otrs;
+CREATE TABLE public.check_user
+(
+  id_user character varying(13) NOT NULL,
+  time_start character varying(20) NOT NULL,
+  id_registration integer,
+  name_famyli character varying(50),
+  mail character varying(40),
+  id_product integer,
+  product_name character varying(20),
+  message_time character varying(20),
+  message_product character varying(1000),
+  id_support integer,
+  message_support character varying(300),
+  id_zayvaka integer
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.check_user
+  OWNER TO otrs;
+
+CREATE TABLE public.check_user_file
+(
+  id_user character varying(13) NOT NULL,
+  name_file character varying(30),
+  message_for_file character varying(500),
+  message_time character varying(20)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.check_user_file
+  OWNER TO otrs;
+  
+Таблица в БД otrs
+
+CREATE TABLE public.articke_flag_bot
+(
+  ticket_id bigint NOT NULL,
+  flag character varying(3)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.articke_flag_bot
+  OWNER TO otrs;

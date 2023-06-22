@@ -1,0 +1,14 @@
+/*policy_management*/
+
+.aud-res-p-m{
+   background-color: #CEA262;   
+   min-width:600px;
+   min-height:485px;
+   overflow-y: auto;
+   overflow-x: auto;
+}
+.aud-res-p-m .nav-item:hover {
+   background-color: #F5F5F5;   
+
+}
+/*---*/
