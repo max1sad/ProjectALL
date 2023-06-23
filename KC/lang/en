@@ -1,0 +1,34 @@
+файл:File
+Каталог:Catalog
+ТипКЦ:TypeKC
+Строка:String
+Было:It was
+Стало:It became
+стр:str
+Строк добавлено:Strings added
+Строк удалено:Strings removed
+Файл не найден:File not found
+Не найдены файлы:No files found
+Добавлены файлы:Added files
+Изменены файлы:Changed files
+Объект по данному правилу не найден:The object by this rule is not found
+Ошибка снятия хэш суммы с файла:Error removing hash sum from file
+Подключение к БД:Connecting to the database
+Файл БД, указанный в конфигурационном файле, не найден или недоступен:The database file specified in the configuration file is not found or not available
+В конфигурационном файле не указан путь к БД:The path to the database is not specified in the configuration file
+Ошибка подключения к БД:Database connection error
+Успешное подключение к БД:Successful connection to the database
+Ошибка создания курсора в:Cursor creation error in
+Ошибка выполнения sql запроса на получение данных:Failed sql query to retrieve data
+Ошибка добавления данных в БД:Error adding data to the database
+Ошибка удаления данных из БД:Error deleting data from the database
+Постановка объектов на КЦ:Putting objects on the IC
+Постановка объектов на КЦ с новым конфигурационным файлом:Putting objects on the IC with a new configuration file
+Не заданы элементы для постановки на КЦ в конфигурационном файле:Items to set for IC in the configuration file are not specified
+Хэш сумма конфигурационного файла skif была изменена. Для повторной инициализации БД данными для постановки объектов на контроль целостности необходимо запустить программу с опцией -u:The hash sum of the skif configuration file has been changed. To re-initialize the database with data to put the objects on IC, you must run the program with the option -u
+В БД не найдены объекты для проверки КЦ:The database does not contain objects for checking
+Конфигурационный файл не найден:Configuration file not found
+В конфигурационном файле заданы не все параметры:Not all parameters are specified in the configuration file
+Файл не подлежит для построчного анализа:The file is not subject to line-by-line analysis
+Не удалось прочитать файл:Failed to read file
+Удаление элементов конфигурационного файла и запись новых элементов из файла:Deleting configuration file items and writing new items from the file
